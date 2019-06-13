@@ -1,0 +1,619 @@
+
+/* this is title css code margin color and alligment   */
+
+.MHead{
+  /*
+    background-size: 1866px 11800px;
+    background-repeat: no-repeat;
+    background-image:url("data:image/jpeg;base64,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");
+    */
+    /* white blue background */
+    background-color: #F5F9F8 ;
+    margin-top: -5px;
+    margin-bottom: -10px;
+
+    padding-top: 50px;
+    padding-bottom: 60px;
+    width: 100%;
+
+
+}
+
+.Mtitle{
+    font-size: 50px;
+    font-family: ;
+    color: black;
+    text-align: center;
+
+
+
+
+
+}
+
+.Mquote{
+  font-size: 20px;
+  font-family: ;
+  color: black;
+  text-align: center;
+
+
+}
+
+
+/*/////////// navigation bar code and buttons code css/////////////*/
+.NavBar{
+ margin-top: -1px;
+ padding-top: 1px;
+ padding-bottom: -200px;
+ background-color:  #F5F9F8 ;
+ height: 45px;
+ width: 100%;
+  /*1350px*/
+}
+
+
+
+#Home{
+  padding: 10px 15px;
+  border: none;
+  display: block;
+  color: black;
+  background-color:#FDF8F8;
+  margin-left: 1px;
+  margin-top: -1px;
+}
+#Home:hover{
+  text-decoration: none;
+  background-color: lightgrey;
+
+
+
+
+}
+
+
+#Skills{
+  padding: 10px 15px;
+  border: none;
+  display: block;
+  color: black;
+  background-color: #FDF8F8;
+  margin-left: 75px;
+  margin-top: -44px;
+}
+#Skills:hover{
+  text-decoration: none;
+  background-color: lightgrey;
+
+
+
+
+}
+
+
+#Education{
+  padding: 10px 15px;
+  border: none;
+  display: block;
+  color: black;
+  background-color: #FDF8F8;
+  margin-left: 139px;
+  margin-top: -44px;
+}
+#Education:hover{
+  text-decoration: none;
+  background-color: lightgrey;
+
+
+
+
+}
+
+
+#Travel{
+  padding: 10px 15px;
+  border: none;
+  display: block;
+  color: black;
+  background-color: #FDF8F8;
+  margin-left: 240px;
+  margin-top: -44px;
+}
+#Travel:hover{
+  text-decoration: none;
+  background-color: lightgrey;
+
+
+
+
+}
+
+
+#Contact{
+  text-decoration: none;
+  padding: 10px 15px;
+  border: none;
+  display: block;
+  color: black;
+  background-color: #FDF8F8;
+  margin-left: 308px;
+  margin-top: -44px;
+
+
+}
+
+#Contact:hover, #Contact:link{
+  text-decoration: none;
+  background-color: lightgrey;
+
+
+}
+
+/*/////////// navigation bar code and buttons code ends/////////////*/
+
+.AboutMe{
+  height: 600px;
+  width: 100%;
+  background-color: #EEFFFD;
+
+}
+/* about title code */
+#AboutMetitle{
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: center;
+  color: black;
+
+}
+#saimimg{
+  margin-left: 42%;
+  border-radius: 100px;
+  background-color: white;
+  /*565px*/
+  margin-top: -5%;
+  margin-bottom: 10%;
+  length: 15%;
+  width: 15%;
+}
+
+/* home div css */
+
+.Homediv.active{
+
+
+  length: 1000px;
+  width: inherit;
+  background-color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: block;
+
+}
+
+.Homediv{
+  length: 1500px;
+  width: 100%;
+  background-color: white;
+  display: none
+
+}
+/* home div css */
+.Hometitle{
+  /* home title */
+  text-align: center;
+
+
+}
+
+/* home table css code*/
+.Homeinfotable1{
+  margin-left: 25%;
+
+}
+
+.Homeinfotable2{
+  margin-left: 32%;
+
+
+}
+
+.Tableinfo{
+  padding-left: 5%;
+  padding-left: 5%;
+
+}
+
+/* home paragraph css */
+.homep{
+  margin-bottom: 10%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-left: 20%;
+  padding-right: 20%;
+
+}
+
+
+
+/*control home page button*/
+#homeconbutton{
+ background-color: #EEFFFD;
+ length: 2%;
+ width: 100%;
+
+}
+
+/* left button css */
+#left-button{
+  background-color: #EEFFFD;
+  margin-left: 45%;
+  display: block;
+  border: none;
+  font-size: 24px;
+
+}
+
+#left-button:hover{
+ background-color: lightgrey;
+}
+
+/* right button css */
+#right-button{
+  background-color: #EEFFFD;
+  margin-top: -38px;
+  margin-left: 750px;
+  margin-left: 55%;
+  display: block;
+  border: none;
+  font-size: 25px;
+
+
+}
+#right-button:hover{
+ background-color: lightgrey;
+}
+
+
+
+/*//////////////////// skill page css ///////////////*/
+/* skill main div */
+
+.skilldiv{
+  padding-top:100px;
+  height: 50%;
+  width: 100%;
+  background-color:#EEFFFD;
+
+
+}
+/* skill title css */
+.Skilltitle{
+  text-align: center;
+  padding-bottom: 5%;
+
+
+}
+
+/* skill paragraph css text alignment */
+.Skillp{
+  text-align: center;
+}
+/* skill title css h2  */
+
+.SkillH2{
+  text-align: center;
+
+}
+/* skill title css h4  */
+
+.SkillH4{
+  margin-top: 10%;
+  text-align: center;
+
+}
+
+/* skill list css code alignment */
+
+.Skilllist{
+  padding-top: 10%;
+  margin-left: 5%;
+  margin-bottom: 50%;
+}
+
+/* skill image code screen css height padding and margin code. image size*/
+
+#codeimg{
+  margin-top: 5%;
+  margin-left: 75%;
+  margin-left: 45%;
+  margin-right: 40%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  height: 20%;
+  width: 10%;
+}
+
+
+/* skill pencil css height padding and margin code. image size*/
+#artimg{
+
+  margin-top: 5%;
+  margin-left: 75%;
+  margin-left: 45%;
+  margin-right: 40%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  height: 20%;
+  width: 10%;
+
+}
+
+/* skill other image css height padding and margin code. image size*/
+
+#otherimg{
+  margin-top: 5%;
+  margin-left: 75%;
+  margin-left: 45%;
+  margin-right: 40%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  height: 20%;
+  width: 10%;
+
+
+}
+
+
+/*  skill information code box */
+
+/* code div box css code */
+#codediv{
+  height: 85%;
+  width: 100%;
+  font-size: -15%;
+  background-color: #EEFFFD;
+  padding-right: 65%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-left: 20%;
+  padding-right: 20%;
+
+
+
+}
+/* art div box css code this css is code has the height and width
+and text size and color  with the color of the box in the div
+and text alignment in the box.*/
+#artdiv{
+  height: 85%;
+  width: 100%;
+  font-size: -15%;
+  background-color: #EEFFFD;
+  padding-right: 65%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-left: 20%;
+  padding-right: 20%;
+
+}
+/* other css information div box css code this css is code has the height and width
+and text size and color  with the color of the box in the div
+and text alignment in the box.*/
+#otherdiv{
+  height: 85%;
+  width: 100%;
+  font-size: -15%;
+  background-color: #EEFFFD;
+  padding-right: 65%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-left: 20%;
+  padding-right: 20%;
+
+}
+/*//////////////////////////////skill page code end //////////////////////*/
+
+
+
+
+/*//////////////////////////////education css page code Starts` //////////////////////*/
+.Educationdiv{
+  padding-top:100px;
+  height: 50%;
+  width: 100%;
+  background-color:#EEFFFD;
+
+
+}
+
+.Educationtitle{
+  /* Education title */
+  text-align: center;
+  padding-bottom: 5%;
+
+}
+.Educationtitle2{
+  /* Education title */
+  text-align: center;
+  padding-bottom: 4%;
+  padding-top: 4%;
+  background-color:#EEFFFD;
+}
+
+.Educationp{
+  padding-top:100px;
+  height: 70%;
+  width: 100%;
+  background-color:#EEFFFD;
+
+
+}
+
+.Educationp2{
+  padding-top:100px;
+  padding-left: 30%;
+  padding-right: 30%;
+  height: 70%;
+  width: 100%;
+  background-color:#EEFFFD;
+
+
+}
+
+.Educationp2{
+  padding-top:100px;
+  padding-bottom: 50px;
+  height: 70%;
+  width: 100%;
+  background-color:#EEFFFD;
+
+
+}
+#grantroadimg{
+  height: 30%;
+  width: 50%;
+
+}
+/* logo img */
+#campbellimg{
+  height: 10%;
+  width: 100%;
+
+
+}
+
+/* front school picture  */
+#CambellSchoolpicimg{
+  height: 20%;
+  width: 20%;
+  margin-top: -14.5%;
+  margin-bottom: 10%;
+  margin-left: 4%;
+
+}
+
+/*//////////////////////////////education page css code ends` //////////////////////*/
+/*//////////////////////////////travel page css code Starts` //////////////////////*/
+
+
+
+.Traveldiv{
+  padding-top:100px;
+  height: 50%;
+  width: 100%;
+  background-color:#EEFFFD;
+
+
+}
+
+.Traveltitle{
+  /* Education title */
+  text-align: center;
+  padding-bottom: 5%;
+
+}
+
+.travelinfodiv{
+  padding-top: 15%;
+  padding-bottom: 30%;
+  margin-top: 1%;
+  height: 100%;
+  width: 100%;
+  background-color:#fcfcfc;
+
+}
+
+#travelp{
+ text-align: center;
+ margin-top: -5%;
+ padding-bottom: 10%;
+}
+
+#subpicdiv1{
+  border-color: lightgrey;
+  border-style: solid;
+  border-width: 1px;
+  padding-bottom: 8%;
+  margin-left: 5%;
+  margin-top: -5%;
+  height: 15%;
+  width: 20%;
+  background-color: white;
+
+}
+
+
+#subpicdiv2{
+  border-color: lightgrey;
+  border-style: solid;
+  border-width: 1px;
+  padding-bottom: 10%;
+  margin-left: 37%;
+  margin-top: -36%;
+  height: 15%;
+  width: 20%;
+  background-color: white;
+
+}
+
+
+#subpicdiv3{
+  border-color: lightgrey;
+  border-style: solid;
+  border-width: 1px;
+  padding-bottom: 11%;
+  margin-left: 70%;
+  margin-top: -38%;
+  height: -5%;
+  width: 20%;
+  background-color: white;
+
+}
+/* title that is underneath the pictures or the name of cities i have visted */
+.subpictitle{
+  margin-left: 33%;
+  padding-top: 2%;
+
+}
+
+.travelpicinfo{
+ padding-left: 3%;
+ padding-right: 3%;
+}
+/*////////////////////////////// Contact page css code Starts` //////////////////////*/
+
+.Contactdiv{
+  padding-top:100px;
+  height: 50%;
+  width: 100%;
+  background-color:#EEFFFD;
+
+
+}
+  /* Contact title  css*/
+.Contacttitle{
+
+  text-align: center;
+  padding-bottom: 5%;
+
+}
+/*////////////////////////////// Contact page css code Starts` //////////////////////*/
+.Contactdiv2{
+
+  padding-top:100px;
+  padding-bottom: 50px;
+  height: 50%;
+  width: 100%;
+  background-color:#EEFFFD;
+
+
+}
+
+.Contactinfo{
+  padding-top: 2%;
+ padding-left: 40%;
+ padding-right: 1%;
+
+
+}

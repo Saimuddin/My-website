@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<!-- this is all the link for jquery and also metadata -->
+<meta name=”viewport” content=”width=device-width, initial-scale=1″>
+<link rel="stylesheet" type="text/css" href="Munshi_Saimuddin_Final_Project_Cs20.css">
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="jslib\Saimuddin Munshi.html.js"></script>
+<script>
+
+
+
+
+/* right button fuctionalty */
+  $(document).ready(function(){
+    /* when right button is clicked */
+    $("#right-button").click(function(){
+      /* the div thats going to start when you load the page */
+      var currentdiv = $('.Homediv.active');
+      /* the next div that is going to be called */
+      var nextdiv = currentdiv.next();
+      /* content in currentdiv fades away for 3 second and the active class is removed*/
+      currentdiv.fadeOut('3000').removeClass('active');
+      /* content in currentdiv fades in for 3 second and the active class is added*/
+      nextdiv.fadeIn('3000').addClass('active');
+      /* if there is no more homedive than take it back to the start thats what the function below does*/
+      if(nextdiv.length == 0){
+      $('.Homediv').first().fadeIn(300).addClass('active');
+
+  }
+ })
+});
+
+  /* left buttonn function code*/
+$(document).ready(function(){
+    /* this code happen when the left button clicked*/
+  $("#left-button").click(function(){
+    /* samething for the right button when you reload the page the div with active class will show*/
+    var currentdiv = $('.Homediv.active');
+    /* samething for the right button when you reload the page the div with active class will show*/
+    var prevdiv = currentdiv.next();
+    /*the current div would fade out and the active class would be removed from it*/
+    currentdiv.fadeOut('3000').removeClass('active');
+    /*the the next dive would fade in and the active class would be assigned to it*/
+    prevdiv.fadeIn('3000').addClass('active');
+  /* if there is no more homedive than take it back to the start thats what the function below does*/
+    if(prevdiv.length == 0){
+    $('.Homediv').last().fadeIn(300).addClass('active');
+
+    }
+  })
+});
+
+
+
+/*
+
+var rigth =
+  $(document).ready(function(){
+    $("#right-button").click(function(){
+      $("#Homediv2").show(function(){
+        $("#Homediv1").hide()
+        $("#Homediv3").hide()
+         $("#right-button").click(function(){
+          $("#Homediv2").hide()
+          $("#Homediv3").show()
+            $("#right-button").repeat()
+         })
+    })
+
+  })
+
+});
+
+*/
+/*
+
+$(document).ready(function(){
+  $("#left-button").click(function(){
+    $("#Homediv3").show(function(){
+      $("#Homediv1").hide()
+      $("#Homediv2").hide()
+        $("#left-button").click(function(){
+          $("#Homediv3").hide()
+          $("#Homediv2").show()
+            $("#left-button").click(function(){
+              $("#Homediv2").hide()
+              $("#Homediv1").show()
+                $("#left-button").hide(function() {
+                  $("#Homediv1").show( function() {
+
+                  })
+
+                })
+                })
+            })
+      })
+
+    })
+});
+*/
+
+/*
+  $(document).ready(function(){
+    $("#right-button").click( function(){
+      $("#Homediv1").slideDown('1000', function() {
+        $("#Homediv1").hide()
+        $("#Homediv2").hide()
+      $("#Homediv3").slideUp(1000,function(){
+          $("#Homediv3").hide()
+          $("#Homediv2").slideDown(1000, function(){
+            $("#Homediv3").hide()
+            $("#Homediv2").show()
+       })
+      })
+     })
+    })
+  })
+
+  $(document).ready(function(){
+    $("#right-button").click(1000, function(){
+      $("#Homediv2").hide()
+       $("#Homediv3").slideToggle(1000, function(){
+         $("#Homediv2").hide()
+         $("#Homediv3").show()
+         $("#Homediv1").hide()
+     })
+    })
+  })
+
+
+
+
+*/
+
+
+</script>
+<head>
+  <!--bootstrap link -->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+
+
+
+<!--this is a div for my navgation bar  -->
+<div class = "NavBar">
+
+<!--this link takes you to the my main webpage. -->
+<div><a href="Munshi_Saimuddin_Final_Project_Cs20_Home.html"><button id="Home">Home </button></a></div>
+<!--this takes you to the my skills webage webpage. -->
+<div><a href="Munshi_Saimuddin_Final_Project_Cs20_Skills.html"><button id="Skills">Skills</button></a></div>
+<!--this takes you to my Education webpage. -->
+<div><a href="Munshi_Saimuddin_Final_Project_Cs20_Education.html"><button id="Education">Education</button></a></div>
+<!--this takes you to my Travel webpage. -->
+<div><a href="Munshi_Saimuddin_Final_Project_Cs20_Travel.html"><button id="Travel">Travel</button></a></div>
+<!--this takes you to m Contact webpage. -->
+<div><a href="Munshi_Saimuddin_Final_Project_Cs20_Contact.html"><button id="Contact">Contact</button></a></div>
+
+</div>
+
+<!-- the title of the page and my name with quote -->
+<div class = "MHead">
+<h1 class= "Mtitle">Saimuddin Munshi</h1>
+<p class = "Mquote">"Perpare for the worest and hope for the best"</p>
+</div>
+
+<!--this is my title div-->
+<div class = "AboutMe">
+  <h2 id = "AboutMetitle"></h2>
+  <!--texedo image link code -->
+  <img id = "saimimg" src ="Img\saimuddintex.jpg" alt="Saimuddin"></img>
+
+
+
+<!--main home div with active class-->
+<div class = "Homediv active">
+  <!-- home page title-->
+  <h2 class ="Hometitle"> Background Story</h2>                                                                                                                                                                                </h2>
+  <div>
+    <hr>
+    <!-- my background story paragraph -->
+    <p class ="homep">  Hi, My name is Saimuddin Munshi. I am 16 year old boy living is Regina Sasketwhan Canada. I was not born in Canada. My place of birth is Karachi, Pakistan. I moved to Canada when I was four years old.
+  My family moved to Canada for job opportunities, also to have a better future with providing us with better education. at they age of six I attended A school in Regina called Grant Road. Grant road was a great school because it had alot of great teachers and also great students.
+  I studied in Grant Road school for nine years. During my time in Grant Road, I begin to develope in intreast towords science and computers. I began learning diffrent programming languges such as Javascript and python. But my lack of understanding of the code and the logic
+  behind some of the programming code. I stopped working on computer programming my intreast twords science grew over time. I began learning about science no matter the field or type. In High school I started to take science and computer science and I believe I can learn and do alot with both field of science.
+
+</div>
+</div>
+
+
+
+<!-- div after the main div this div has information about my favorite thing -->
+<div class="Homediv">
+<!-- favorie title code  -->
+  <h2 class ="Hometitle"> My Favorite things to do </h2>
+  <hr>
+  <!--paragraph for favorite   -->
+      <div class ="homep"> <p>I love to play video games, in my spare time, such as call of duty. When I am not playing video games,
+        I love watching documentries on science; or just spend my time watching Netflix. My favorite food is pizza. I love peproni pizza with tandoorie base. I also love going to the gym to
+        get stronger; and most importantly to have a good body. My favorite sports are soccer and basketball.
+      </p>
+
+        </div>
+
+
+
+
+</div>
+
+<div class ="Homediv">
+
+  <!-- Other information title -->
+ <h2 class ="Hometitle"> Other Information </h2>
+  <hr>
+  <!-- information table code -->
+ <table class = "Homeinfotable1"style="width:50%">
+ <tr class = "Tableinfo">
+   <th>FirstName</th>
+   <th>LastName</th>
+   <th>Age</th>
+ </tr>
+
+ <tr>
+
+   <td>Saimuddin</td>
+   <td>Munshi</td>
+   <td>16</td>
+ </tr>
+ <table class = "Homeinfotable2"style="width:50%">
+ <tr>
+   <th>Status</th>
+   <th>Country</th>
+   <th>Province</th>
+ </tr>
+ <hr>
+ <tr>
+
+   <td >Alive</td>
+   <td>Canada</td>
+   <td>Regina</td>
+ </tr>
+ <hr>
+</table>
+</div>
+<!-- left right control button -->
+<div id = "homeconbutton">
+    <button id= "left-button"> < </button>
+    <button id= "right-button"> > </button>
+
+</div>
+
+
+
+</body>
+</html>

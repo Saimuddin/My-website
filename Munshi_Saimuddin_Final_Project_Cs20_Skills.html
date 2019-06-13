@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<meta name=”viewport” content=”width=device-width, initial-scale=1″>
+<link rel="stylesheet" type="text/css" href="Munshi_Saimuddin_Final_Project_Cs20.css">
+<!-- jquery code link and file code also bootstrap link code -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="jslib\Saimuddin Munshi.html.js"></script>
+<script>
+
+/* this is hidding all the div with text only showing pictures */
+$(document).ready(function() {
+  $("#codediv").hide()
+  $("#artdiv").hide()
+  $("#otherdiv").hide()
+});
+
+/* this code shows div when mouse hovers over img and hides when the mouse is not on image the box with text hides */
+$(document).ready(function() {
+  $("#codeimg").mouseover(function(event) {
+    $("#codediv").show().mouseleave(function(event) {
+      $("#codediv").hide(10)
+      $("#artdiv").hide(10)
+      $("#otherdiv").hide(10)
+/* this is code is for art img when mouse goes over it text box with id artdiv appears and hides all other boxes */
+$(document).ready(function() {
+      $("#artimg").mouseover(function(event) {
+        $("#artdiv").show().mouseleave(function(event) {
+          $("#codediv").hide(10)
+          $("#artdiv").hide(10)
+          $("#otherdiv").hide(10)
+/* this is code is for other img when mouse goes over it image text box with id otherdiv appears and hides all other div boxes */
+$(document).ready(function() {
+         $("#otherimg").mouseover(function(event) {
+           $("#otherdiv").show().mouseleave(function(event) {
+             $("#codediv").hide(10)
+             $("#artdiv").hide(10)
+             $("#otherdiv").hide(10)
+
+
+                  })
+                  })
+                });
+           })
+           })
+         });
+
+    })
+    })
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+<head>
+
+</head>
+<body>
+
+
+
+
+
+  <!--this is a div for my navgation bar  -->
+  <div class = "NavBar">
+
+  <!--this link takes you to the my main webpage. -->
+  <div><a href="Munshi_Saimuddin_Final_Project_Cs20_Home.html"><button id="Home">Home </button></a></div>
+  <!--this takes you to the my skills webage webpage. -->
+  <div><a href="Munshi_Saimuddin_Final_Project_Cs20_Skills.html"><button id="Skills">Skills</button></a></div>
+  <!--this takes you to my Education webpage. -->
+  <div><a href="Munshi_Saimuddin_Final_Project_Cs20_Education.html"><button id="Education">Education</button></a></div>
+  <!--this takes you to my Travel webpage. -->
+  <div><a href="Munshi_Saimuddin_Final_Project_Cs20_Travel.html"><button id="Travel">Travel</button></a></div>
+  <!--this takes you to m Contact webpage. -->
+  <div><a href="Munshi_Saimuddin_Final_Project_Cs20_Contact.html"><button id="Contact">Contact</button></a></div>
+
+  </div>
+
+<!--page title and quote and background -->
+<div class = "MHead">
+<h1 class= "Mtitle">Saimuddin Munshi</h1>
+<p class = "Mquote">"Practice makes it perfect"</p>
+</div>
+
+<!-- skill title and div skill paragraph code  -->
+<div class="skilldiv">
+
+  <h2 class="Skilltitle">Skills</h2>
+  <hr>
+  <!-- skill html paragraph -->
+    <p class= "Skillp"> Here are some of my skills that I have achieved. </p>
+
+</div>
+      <!-- this  div has the code for code screen image  -->
+    <div>
+      <!-- src="E:\wbsite project\Img\codeicon.jpg" from img folder in wb project -->
+
+      <img src ="Img\codeicon.jpg" alt="code screen icon"  id="codeimg">
+       <div id = "codediv">
+         <!-- code image title -->
+        <h2 class = "SkillH2">Computer</h2>
+         <hr>
+         <!-- computer paragraph -->
+         <p>I have many skills when it comes to using computer. I know alot about programming languges such as <strong>javascript, python, css,  and html</strong>
+         I also know how to replace and fix parts of a broken computer.</p>
+
+
+       </div>
+
+    </div>
+
+    <!-- this is the main art icon div with image and text -->
+
+  <div>
+       <!-- src="E:\wbsite project\Img\articon.jpg" -->
+       <!--art div code and paragraph-->
+      <img src = "Img\articon.jpg" alt="pencil icon"  id="artimg" >
+      <!-- pencil icon id and image code above line this code shows a picture of pencil -->
+      <div id = "artdiv">
+        <!-- div art title -->
+          <h2 class = "SkillH2">Creativity</h2>
+          <hr>
+          <!-- paragraph inside the div that shows up when mouse hovers overs image -->
+          <p> I am cosider as creative/resourceful person. I am really good at drawing and sketching. I am known to work well with the resource given to me.  </p></div>
+
+  </div>
+
+
+    <div>
+      <!-- other skill information html code -->
+        <!-- src="E:\wbsite project\Img\gameicon.jpg" -->
+        <!-- other image file link and id other img this picture that shows on the website with one big circle and three small circle within that circle is form more or other information for skills -->
+      <img src = "Img\othericon.jpg" alt="other icon" id="otherimg" >
+      <div id = "otherdiv">
+          <!-- other image title and with H2 class-->
+            <h2 class = "SkillH2"> Other Skills </h2>
+            <hr>
+            <!-- other image  paragraph and list and title code -->
+              <p  class = "Skillp"> Here is a list of skills that I have </p>
+              <h5 class="SkillH4">Everyday Skills</h5>
+              <!-- more/other skill list -->
+              <ul class="Skilllist">
+                <li>Time Management: I am great at managing my time and also get my work done on time.</li>
+                <li>Decision-making: I have great decsion making skills. I make my decision depending on time and scenario given.</li>
+                <li>Multitasking: I can multitask when I have to. And still complete my tasks.</li>
+                <li>Goal setting: Setting goals help me achieve my goals and complete my task at hand.</li>
+                <li>Prioritizing: If I have to, I prioritize my task by how important they are. How long it will take to complete</li>
+                <li>Ability to Work Under Pressure: I work twice as hard under pressure.</li>
+             </ul>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    </div>
+
+
+
+</body>
+
+
+</html>
